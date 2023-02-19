@@ -1,13 +1,15 @@
 import React from 'react'
-import logo from '../assets/images/logo.svg'
+
 import main from '../assets/images/main.svg'
 import Wrapper from '../assets/wrappers/LandingPage'
+import {Logo} from '../components'
+import { Link } from 'react-router-dom'
 
 const Landing = () => {
   return (
     <Wrapper>
         <nav>
-        <img src={logo} alt='logo' className='logo' />            
+        <Logo />
         </nav>
 
         <div className='container page'>
@@ -21,7 +23,7 @@ const Landing = () => {
             <p>
             Subway tile magna live-edge YOLO meditation veniam same enamel pin tbh thundercats kickstarter. Semiotics chillwave sustainable, raclette prism polaroid consequat. Air plant before they sold out copper mug banjo activated charcoal shabby chic mustache locavore magna. Flannel man braid cornhole next level tumeric snackwave deserunt. Ad edison bulb slow-carb nulla mollit do culpa mumblecore kinfolk incididunt intelligentsia heirloom biodiesel taxidermy qui. Tonx gastropub fanny pack gentrify cupidatat same post-ironic ad heirloom kitsch messenger bag letterpress viral stumptown. Fam godard same sriracha brunch bespoke cliche, listicle echo park consequat venmo williamsburg.
             </p> 
-            <button className='btn btn-hero'> Login/register</button>
+            <Link to='/register' className='btn btn-hero'> Login/register</Link>
         </div>
 
         <img src={main} alt='job' className='img main-img'/>
