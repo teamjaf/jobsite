@@ -11,8 +11,9 @@ return(
         <Route path="/" element={<Dashboard />} />
         <Route path="landing" element={<Landing />} />
         <Route path="Register" element={<Register />} />
-        <Route path="*" element={<Error />} />
+        <Route path="*" element={<Error />} />        
     </Routes>
+    <ToastContainer position="top-center"/>
     </BrowserRouter>
     )
 }
