@@ -9,7 +9,7 @@ return(
         <Route path="/" element={<Dashboard />} />
         <Route path="landing" element={<Landing />} />
         <Route path="Register" element={<Register />} />
-        <Route path="Error" element={<Error />} />
+        <Route path="*" element={<Error />} />
     </Routes>
     </BrowserRouter>
     )
