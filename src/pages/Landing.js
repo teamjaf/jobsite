@@ -1,36 +1,32 @@
-import React from 'react'
-
-import main from '../assets/images/main.svg'
-import Wrapper from '../assets/wrappers/LandingPage'
-import {Logo} from '../components'
-import { Link } from 'react-router-dom'
-
+import main from '../assets/images/main.svg';
+import Wrapper from '../assets/wrappers/LandingPage';
+import { Logo } from '../components';
+import { Link } from 'react-router-dom';
 const Landing = () => {
   return (
     <Wrapper>
-        <nav>
+      <nav>
         <Logo />
-        </nav>
-
-        <div className='container page'>
-
-        </div>
-
+      </nav>
+      <div className='container page'>
+        {/* info */}
         <div className='info'>
-            <h1>
-                Job <span> tracking</span> app
-            </h1>           
-            <p>
-            Subway tile magna live-edge YOLO meditation veniam same enamel pin tbh thundercats kickstarter. Semiotics chillwave sustainable, raclette prism polaroid consequat. Air plant before they sold out copper mug banjo activated charcoal shabby chic mustache locavore magna. Flannel man braid cornhole next level tumeric snackwave deserunt. Ad edison bulb slow-carb nulla mollit do culpa mumblecore kinfolk incididunt intelligentsia heirloom biodiesel taxidermy qui. Tonx gastropub fanny pack gentrify cupidatat same post-ironic ad heirloom kitsch messenger bag letterpress viral stumptown. Fam godard same sriracha brunch bespoke cliche, listicle echo park consequat venmo williamsburg.
-            </p> 
-            <Link to='/register' className='btn btn-hero'> Login/register</Link>
+          <h1>
+            job <span>tracking</span> app
+          </h1>
+          <p>
+            Crucifix narwhal street art asymmetrical, humblebrag tote bag pop-up
+            fixie raclette taxidermy craft beer. Brunch bitters synth, VHS
+            crucifix heirloom meggings bicycle rights.
+          </p>
+          <Link to='/register' className='btn btn-hero'>
+            Login/Register
+          </Link>
         </div>
-
-        <img src={main} alt='job' className='img main-img'/>
+        <img src={main} alt='job hunt' className='img main-img' />
+      </div>
     </Wrapper>
-  )
-}
+  );
+};
 
-
-
-export default Landing
+export default Landing;
